@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/_index.tsx?browser", "../../../app/routes/_index.tsx"],
+  "sourcesContent": ["export { default, meta } from \"./routes/_index.tsx\";", "import type { V2_MetaFunction } from \"@remix-run/node\";\n\nexport const meta: V2_MetaFunction = () => {\n  return [{ title: \"New Remix App\" }];\n};\n\nexport default function Index() {\n  return <h1 className=\"text-3xl font-bold underline\">Hello world!</h1>;\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAOS;AALF,IAAM,OAAwB,MAAM;AACzC,SAAO,CAAC,EAAE,OAAO,gBAAgB,CAAC;AACpC;AAEe,SAAR,QAAyB;AAC9B,SAAO,mDAAC,QAAG,WAAU,gCAA+B,4BAA7C;AAAA;AAAA;AAAA;AAAA,SAAyD;AAClE;",
+  "names": []
+}
