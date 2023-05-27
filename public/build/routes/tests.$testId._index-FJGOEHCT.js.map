@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/tests.$testId._index.tsx?browser", "../../../app/routes/tests.$testId._index.tsx"],
+  "sourcesContent": ["export { default } from \"./routes/tests.$testId._index.tsx\";", "import { useLoaderData } from \"@remix-run/react\";\nimport { db } from \"~/services/db\";\n\nexport default function lugarid() {\n  const lugar = useLoaderData();\n  return (\n    <>\n      <p>{lugar.nombre}</p>\n    </>\n  );\n}\n\nexport const loader = async ({ params }: any) => {\n  const lugar = await db.lugar.findUnique({\n    where: {\n      id: params.testId,\n    },\n  });\n  return lugar;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAMI;AAHW,SAAR,UAA2B;AAChC,QAAM,QAAQ,cAAc;AAC5B,SACE,sFACE,6DAAC,OAAG,gBAAM,UAAV;AAAA;AAAA;AAAA;AAAA,SAAiB,KADnB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;",
+  "names": []
+}
